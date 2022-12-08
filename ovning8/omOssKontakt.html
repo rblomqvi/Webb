@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-      <title>Bootstrap Example</title>
+      <title>OmOssKontakt</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,18 +11,69 @@
           body {
         /* background-color: PeachPuff; */
         background-color: rgb(189, 167, 146);
-
+         }
+               /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #332d2e;
+        height: 100%;
       }
+      div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+}  
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+      }
+
 </style>
-    <h2>Om företaget Kaffe haket</h2>
-<p> Kaffe haket är ett italienskt familjeföretag som erbjuder högkvalitativa produkter och utsökt kaffe.</p>
-<p> Företaget grundades 1902 av familjen Svensson som drev en verkstad för tillverkning av industridelar.</p>
-
-<p> Kaffe haket erbjuder smarta och innovativa hel- och halvautomatiska maskiner med det där lilla extra som gör vardagens rutiner till härliga upplevelser.</p>
-<p> Låt tillfälle och humör avgöra om du tar en stark och god espresso gjord på traditionellt sätt eller avnjuter en cappuccino med perfekt latte crema.</p>
-
-
 <body>
+  <header class="huvudrubriken">
+    <h2 style="color:rgb(117, 121, 118);text-align:left;">Kaffe haket, välkomna in</h2>    
+  </header>
+         <!-- nedan ger en navbar längst upp på sidan (om. den ligger först i <body>) -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Välj -></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="produkter.html">Produkter</a></li>
+        <li><a href="omOssKontakt.html">Om oss/kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2>Om företaget Kaffe haket</h2>
+  <p> Kaffe haket är ett italienskt familjeföretag som erbjuder högkvalitativa produkter och utsökt kaffe.</p>
+  <p> Företaget grundades 1902 av familjen Svensson som drev en verkstad för tillverkning av industridelar.</p>
+  
+  <p> Kaffe haket erbjuder smarta och innovativa hel- och halvautomatiska maskiner med det där lilla extra som gör vardagens rutiner till härliga upplevelser.</p>
+  <p> Låt tillfälle och humör avgöra om du tar en stark och god espresso gjord på traditionellt sätt eller avnjuter en cappuccino med perfekt latte crema.</p>
 
 <div class="jabba">
   <h3>Kontakta oss:</h3>
@@ -47,3 +98,9 @@
           <p>Email: leia@outerspace.com</p>
     </div>
 </div>
+<br>
+<br>
+<br>
+<footer>
+  <p>© 2022 Copyright. Webmaster Rob på uppdrag av F5</p>
+</footer>
